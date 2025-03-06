@@ -12,4 +12,8 @@ Verwijderen van de container pod:
 kubectl delete pod -l control-plane=controller-manager -n k8s-operator-benchmark-system
 ```
 
+Voor het aanmaken van de custom resources kan het bash script cr-generator gebruikt worden. De types: "Go", "ansible", "python"
+```bash
+./cr-generator.sh <aantal> <locatie> <type>
+```
 
