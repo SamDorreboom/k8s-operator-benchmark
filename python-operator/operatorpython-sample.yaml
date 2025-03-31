@@ -1,0 +1,9 @@
+apiVersion: operators.samdorreboom.nl/v1alpha1
+kind: Operatorpython
+metadata:
+  labels:
+    app.kubernetes.io/name: k8s-operator-benchmark
+    app.kubernetes.io/managed-by: kustomize
+  name: operatorpython-sample
+spec:
+  naam: "henk"

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-operator
+  namespace: python-operator
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      application: python-operator
+  template:
+    metadata:
+      labels:
+        application: python-operator
+    spec:
+      serviceAccountName: python-operator-account
+      containers:
+      - name: python-controller
+        image: samdorreboom/k8s-operator-benchmark:python
