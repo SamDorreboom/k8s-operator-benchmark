@@ -1,5 +1,5 @@
 apiVersion: operators.samdorreboom.nl/v1alpha1
-kind: Operatorpython
+kind: Securedropzone
 metadata:
   labels:
     app.kubernetes.io/name: k8s-operator-benchmark
