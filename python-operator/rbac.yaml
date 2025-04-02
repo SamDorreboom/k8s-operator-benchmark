@@ -23,7 +23,7 @@ rules:
 
   # Framework: knowing which other operators are running (i.e. peering).
   - apiGroups: [operators.samdorreboom.nl]
-    resources: [operatorpythons, operatorpythons/status]
+    resources: [securedropzones, securedropzones/status]
     verbs: [list, watch, patch, get]
 
   # Framework: runtime observation of namespaces & CRDs (addition/deletion).
@@ -41,8 +41,14 @@ rules:
 
   # Application: read-only access for watching cluster-wide.
   - apiGroups: [operators.samdorreboom.nl]
-    resources: [operatorpythons]
+    resources: [securedropzones]
     verbs: [list, watch]
+  - apiGroups: [""]
+    resources: [pods,services]
+    verbs: [create,delete,list,get]
+  - apiGroups: ["apps"]
+    resources: ["deployments"]
+    verbs: [create,delete,update,list]
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
@@ -53,7 +59,7 @@ rules:
 
   # Framework: knowing which other operators are running (i.e. peering).
   - apiGroups: [operators.samdorreboom.nl]
-    resources: [operatorpythons]
+    resources: [securedropzones]
     verbs: [list, watch, patch, get]
 
   # Framework: posting the events about the handlers progress/errors.
@@ -63,7 +69,7 @@ rules:
 
   # Application: watching & handling for the custom resource we declare.
   - apiGroups: [operators.samdorreboom.nl]
-    resources: [operatorpythons]
+    resources: [securedropzones]
     verbs: [list, watch, patch]
 
   # Application: other resources it produces and manipulates.
@@ -72,8 +78,11 @@ rules:
     resources: [jobs]
     verbs: [create]
   - apiGroups: [""]
-    resources: [pods, persistentvolumeclaims]
-    verbs: [create]
+    resources: [pods,services]
+    verbs: [create,delete,list,get]
+  - apiGroups: ["apps"]
+    resources: ["deployments"]
+    verbs: [create,delete,update,list]
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
@@ -99,5 +108,5 @@ roleRef:
   name: pythonoperator-role-namespaced
 subjects:
   - kind: ServiceAccount
-    name: pythonoperator-account
+    name: python-operator-account
     namespace: python-operator

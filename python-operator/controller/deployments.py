@@ -1,93 +1,36 @@
 import yaml
 
-def get_deploysms(spec, name, **kwargs):
+def make_deployment(name, label, image):
+    return yaml.safe_load(f"""
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {name}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {label}
+  template:
+    metadata:
+      labels:
+        app: {label}
+    spec:
+      imagePullSecrets:
+      - name: gitlab-registry
+      containers:
+      - name: {label}
+        image: "{image}"
+""")
 
-    depl = yaml.safe_load(f"""
-        apiVersion: apps/v1
-        kind: Deployment
-        metadata:
-          name: 
-        spec:
-          replicas: 1
-          template:
-            metadata:
-              labels:
-                app: "mail-deploy"
-            spec:
-              imagePullSecrets:
-                name: gitlab-registry
-              containers:
-              - name: mail
-                image: "registry.gitlab.warpnet.nl/securedropzone/securedropzone-e2ee/sms:1.7.0"
-                            
-    """)
-    return depl
+def get_deploymail():
+    return make_deployment("mail-deployment", "mail-deployment", "registry.gitlab.warpnet.nl/securedropzone/securedropzone-e2ee/mail:1.7.0")
 
-def get_deployweb(spec, name, **kwargs):
+def get_deployweb():
+    return make_deployment("web-deployment", "web-deployment", "registry.gitlab.warpnet.nl/securedropzone/securedropzone-e2ee/web:1.7.0")
 
-    depl = yaml.safe_load(f"""
-        apiVersion: apps/v1
-        kind: Deployment
-        metadata:
-          name: 
-        spec:
-          replicas: 1
-          template:
-            metadata:
-              labels:
-                app: securedropzone-web
-            spec:
-              imagePullSecrets:
-                name: gitlab-registry
-              containers:
-              - name: mail
-                image: "registry.gitlab.warpnet.nl/securedropzone/securedropzone-e2ee/web:1.7.0"
-                            
-    """)
-    return depl
+def get_deploysms():
+    return make_deployment("sms-deployment", "sms-deployment", "registry.gitlab.warpnet.nl/securedropzone/securedropzone-e2ee/sms:1.7.0")
 
-def get_deploystorage(spec, name, **kwargs):
-
-    depl = yaml.safe_load(f"""
-        apiVersion: apps/v1
-        kind: Deployment
-        metadata:
-          name: 
-        spec:
-          replicas: 1
-          template:
-            metadata:
-              labels:
-                app: "mail-deploy"
-            spec:
-              imagePullSecrets:
-                name: gitlab-registry
-              containers:
-              - name: mail
-                image: "registry.gitlab.warpnet.nl/securedropzone/securedropzone-e2ee/storage:1.7.0"
-                            
-    """)
-    return depl
-
-def get_deploymail(spec, name, **kwargs):
-
-    depl = yaml.safe_load(f"""
-        apiVersion: apps/v1
-        kind: Deployment
-        metadata:
-          name: 
-        spec:
-          replicas: 1
-          template:
-            metadata:
-              labels:
-                app: "mail-deploy"
-            spec:
-              imagePullSecrets:
-                name: gitlab-registry
-              containers:
-              - name: mail
-                image: "registry.gitlab.warpnet.nl/securedropzone/securedropzone-e2ee/mail:1.7.0"
-                            
-    """)
-    return depl
+def get_deploystorage():
+    return make_deployment("storage-deployment", "storage-deployment", "registry.gitlab.warpnet.nl/securedropzone/securedropzone-e2ee/storage:1.7.0")
