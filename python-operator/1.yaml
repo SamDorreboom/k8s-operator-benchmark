@@ -1,0 +1,8 @@
+apiVersion: operators.samdorreboom.nl/v1alpha1
+kind: Securedropzone
+metadata:
+  labels:
+    app.kubernetes.io/name: k8s-operator-benchmark
+  name: 1
+spec:
+  naam: "test1"
