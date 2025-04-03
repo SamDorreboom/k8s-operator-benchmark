@@ -32,7 +32,7 @@ spec:
           spec:
             description: Spec defines the desired state of operatorpython
             properties:
-              naam:
+              name:
                 description: De naam van de pod.
                 type: string
             type: object

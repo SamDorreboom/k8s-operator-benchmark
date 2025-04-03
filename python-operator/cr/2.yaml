@@ -3,6 +3,7 @@ kind: Securedropzone
 metadata:
   labels:
     app.kubernetes.io/name: k8s-operator-benchmark
-  name: 1
+  name: test2
+  namespace: onderzoek
 spec:
-  naam: "test1"
+  name: "test2"

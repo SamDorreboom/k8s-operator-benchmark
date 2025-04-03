@@ -23,14 +23,14 @@ spec:
         image: "{image}"
 """)
 
-def get_deploymail():
-    return make_deployment("mail-deployment", "mail-deployment", "registry.gitlab.warpnet.nl/securedropzone/securedropzone-e2ee/mail:1.7.0")
+def get_deploymail(naam):
+    return make_deployment(f"mail-deployment-{naam}", f"mail-deployment-{naam}", "registry.gitlab.warpnet.nl/securedropzone/securedropzone-e2ee/mail:1.7.0")
 
-def get_deployweb():
-    return make_deployment("web-deployment", "web-deployment", "registry.gitlab.warpnet.nl/securedropzone/securedropzone-e2ee/web:1.7.0")
+def get_deployweb(naam):
+    return make_deployment(f"web-deployment-{naam}", f"web-deployment-{naam}", "registry.gitlab.warpnet.nl/securedropzone/securedropzone-e2ee/web:1.7.0")
 
-def get_deploysms():
-    return make_deployment("sms-deployment", "sms-deployment", "registry.gitlab.warpnet.nl/securedropzone/securedropzone-e2ee/sms:1.7.0")
+def get_deploysms(naam):
+    return make_deployment(f"sms-deployment-{naam}", f"sms-deployment-{naam}", "registry.gitlab.warpnet.nl/securedropzone/securedropzone-e2ee/sms:1.7.0")
 
-def get_deploystorage():
-    return make_deployment("storage-deployment", "storage-deployment", "registry.gitlab.warpnet.nl/securedropzone/securedropzone-e2ee/storage:1.7.0")
+def get_deploystorage(naam):
+    return make_deployment(f"storage-deployment-{naam}", f"storage-deployment-{naam}", "registry.gitlab.warpnet.nl/securedropzone/securedropzone-e2ee/storage:1.7.0")
