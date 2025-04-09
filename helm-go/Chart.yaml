@@ -1,5 +1,5 @@
 apiVersion: v2
-name: sdz-operator
+name: helm-go
 description: A Helm chart to deploy the SecureDropzone operator
 
 type: application
