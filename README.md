@@ -17,6 +17,16 @@ Voor het aanmaken van de custom resources kan het bash script cr-generator gebru
 ./cr-generator.sh <aantal> <locatie> <type>
 ```
 
+## JQ commands
+jq -r '
+  select(
+    (.user.username == "system:serviceaccount:sdz-operator-system:controller-manager") and
+    (.timestamp >= "2025-04-09T12:00:00Z") and
+    (.timestamp <= "2025-04-09T13:00:00Z")
+  ) | .verb' audit.log | sort | uniq -c | sort -nr
+
+
+
 ## Audit inschakelen in Minikube
 ```bash
 minikube stop
