@@ -1,0 +1,9 @@
+apiVersion: v2
+name: sdz-operator
+description: A Helm chart to deploy the SecureDropzone operator
+
+type: application
+
+version: 0.1.0
+
+appVersion: "1.16.0"
