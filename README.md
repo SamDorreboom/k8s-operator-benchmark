@@ -29,8 +29,8 @@ jq -r '
 jq -r '
   select(
     (.user.username == "system:serviceaccount:sdz-operator-system:controller-manager") and
-    (.requestReceivedTimestamp >= "2025-04-09T08:45:00.000000Z") and
-    (.requestReceivedTimestamp <= "2025-04-09T09:45:00.000000Z")
+    (.requestReceivedTimestamp >= "2025-04-09T10:14:00.000000Z") and
+    (.requestReceivedTimestamp <= "2025-04-09T10:23:00.000000Z")
   ) | .verb' /var/log/kubernetes/audit/audit.log | sort | uniq -c | sort -nr
 
 
