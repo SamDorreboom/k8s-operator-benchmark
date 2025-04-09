@@ -21,9 +21,17 @@ Voor het aanmaken van de custom resources kan het bash script cr-generator gebru
 jq -r '
   select(
     (.user.username == "system:serviceaccount:sdz-operator-system:controller-manager") and
-    (.timestamp >= "2025-04-09T12:00:00Z") and
-    (.timestamp <= "2025-04-09T13:00:00Z")
-  ) | .verb' audit.log | sort | uniq -c | sort -nr
+    (.timestamp >= "2025-04-09T08:00:00.000000Z") and
+    (.timestamp <= "2025-04-09T09:45:00.000000Z")
+  ) | .verb' /var/log/kubernetes/audit/audit.log | sort | uniq -c | sort -nr
+
+
+jq -r '
+  select(
+    (.user.username == "system:serviceaccount:sdz-operator-system:controller-manager") and
+    (.requestReceivedTimestamp >= "2025-04-09T08:45:00.000000Z") and
+    (.requestReceivedTimestamp <= "2025-04-09T09:45:00.000000Z")
+  ) | .verb' /var/log/kubernetes/audit/audit.log | sort | uniq -c | sort -nr
 
 
 
