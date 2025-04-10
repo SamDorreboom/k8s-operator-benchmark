@@ -4,7 +4,7 @@ x=0
 echo "Iteration, Timestamp, Securedropzone Creation Time, Deployment Creation Time, Service Creation Time" > /home/sam/github/k8s-operator-benchmark/data.csv
 
 
-while [ $x -lt 10 ]
+while [ $x -lt 4 ]
 do
     kubectl apply -f /home/sam/github/k8s-operator-benchmark/python-operator/cr
     sleep 3

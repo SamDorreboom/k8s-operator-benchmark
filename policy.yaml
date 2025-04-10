@@ -1,0 +1,29 @@
+apiVersion: audit.k8s.io/v1
+kind: Policy
+metadata:
+  name: audit-policy
+# Dit beleid bepaalt wat er wordt weggeschreven in de audit-logs.
+rules:
+  # Voor alle requests die komen van de betreffende serviceaccount,
+  # loggen we verzoek en antwoord (RequestResponse).
+  - level: RequestResponse
+    users:
+      # Hier vervang je 'jouw-namespace' en 'jouw-serviceaccount' door je eigen waardes.
+      - "system:serviceaccount:jouw-namespace:jouw-serviceaccount"
+    verbs: ["*"]
+    resources:
+      - group: "*"
+        resources: ["*"]
+        # Eventueel kun je hieronder subresources ook loggen, bijvoorbeeld:
+        # subresources: ["*"]
+    # Omit stages geeft aan welke stadia je wilt overslaan bij het loggen.
+    # "RequestReceived" is meestal niet zo relevant.
+    omitStages:
+      - "RequestReceived"
+
+  # Voor alle andere requests die niet door deze serviceaccount worden gedaan,
+  # kun je ervoor kiezen om niks of een ander logniveau te hanteren. Bijv. None:
+  - level: None
+    resources:
+      - group: "*"
+        resources: ["*"]

@@ -1,0 +1,2907 @@
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "f3f41711-e439-4881-aec2-afaced948546",
+  "stage": "RequestReceived",
+  "requestURI": "/api/v1/services?allowWatchBookmarks=true&resourceVersion=184558&timeoutSeconds=540&watch=true",
+  "verb": "watch",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:14:25.123411Z",
+  "stageTimestamp": "2025-04-09T10:14:25.123411Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "f3f41711-e439-4881-aec2-afaced948546",
+  "stage": "ResponseStarted",
+  "requestURI": "/api/v1/services?allowWatchBookmarks=true&resourceVersion=184558&timeoutSeconds=540&watch=true",
+  "verb": "watch",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 200
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:14:25.123411Z",
+  "stageTimestamp": "2025-04-09T10:14:25.124860Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "3e8bd0d4-66f4-4418-9c3a-eb57ded76f1d",
+  "stage": "RequestReceived",
+  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "namespace": "default",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:15:00.085968Z",
+  "stageTimestamp": "2025-04-09T10:15:00.085968Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "3e8bd0d4-66f4-4418-9c3a-eb57ded76f1d",
+  "stage": "ResponseComplete",
+  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "namespace": "default",
+    "name": "securedropzone",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 201
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:15:00.085968Z",
+  "stageTimestamp": "2025-04-09T10:15:00.101167Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "b40883ce-65bc-4945-8460-ceaa31629b8f",
+  "stage": "RequestReceived",
+  "requestURI": "/api/v1/namespaces/default/services",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "namespace": "default",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:15:00.103591Z",
+  "stageTimestamp": "2025-04-09T10:15:00.103591Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "b40883ce-65bc-4945-8460-ceaa31629b8f",
+  "stage": "ResponseComplete",
+  "requestURI": "/api/v1/namespaces/default/services",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "namespace": "default",
+    "name": "web-service",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 201
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:15:00.103591Z",
+  "stageTimestamp": "2025-04-09T10:15:00.131053Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "99b93e4f-2050-4d02-8aae-f19a36b0d3a2",
+  "stage": "RequestReceived",
+  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "namespace": "default",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:15:00.135825Z",
+  "stageTimestamp": "2025-04-09T10:15:00.135825Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "99b93e4f-2050-4d02-8aae-f19a36b0d3a2",
+  "stage": "ResponseComplete",
+  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "namespace": "default",
+    "name": "securedropzone-sms",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 201
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:15:00.135825Z",
+  "stageTimestamp": "2025-04-09T10:15:00.152969Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "5f5fb702-2181-4c92-a7e2-53259fa16678",
+  "stage": "RequestReceived",
+  "requestURI": "/api/v1/namespaces/default/services",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "namespace": "default",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:15:00.159365Z",
+  "stageTimestamp": "2025-04-09T10:15:00.159365Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "5f5fb702-2181-4c92-a7e2-53259fa16678",
+  "stage": "ResponseComplete",
+  "requestURI": "/api/v1/namespaces/default/services",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "namespace": "default",
+    "name": "sms-service",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 201
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:15:00.159365Z",
+  "stageTimestamp": "2025-04-09T10:15:00.176772Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "fb923d86-9d20-4bb7-aaf0-a2efb4791e01",
+  "stage": "RequestReceived",
+  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "namespace": "default",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:15:00.181849Z",
+  "stageTimestamp": "2025-04-09T10:15:00.181849Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "fb923d86-9d20-4bb7-aaf0-a2efb4791e01",
+  "stage": "ResponseComplete",
+  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "namespace": "default",
+    "name": "securedropzone-storage",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 201
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:15:00.181849Z",
+  "stageTimestamp": "2025-04-09T10:15:00.194203Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "0720d0fc-6c9a-4a41-92ee-0df31146cef8",
+  "stage": "RequestReceived",
+  "requestURI": "/api/v1/namespaces/default/services",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "namespace": "default",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:15:00.197163Z",
+  "stageTimestamp": "2025-04-09T10:15:00.197163Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "0720d0fc-6c9a-4a41-92ee-0df31146cef8",
+  "stage": "ResponseComplete",
+  "requestURI": "/api/v1/namespaces/default/services",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "namespace": "default",
+    "name": "storage-service",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 201
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:15:00.197163Z",
+  "stageTimestamp": "2025-04-09T10:15:00.241681Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "04c269d6-dd66-4717-a10d-aacf29e4d434",
+  "stage": "RequestReceived",
+  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "namespace": "default",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:15:00.258254Z",
+  "stageTimestamp": "2025-04-09T10:15:00.258254Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "04c269d6-dd66-4717-a10d-aacf29e4d434",
+  "stage": "ResponseComplete",
+  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "namespace": "default",
+    "name": "securedropzone-mail",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 201
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:15:00.258254Z",
+  "stageTimestamp": "2025-04-09T10:15:00.283338Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "36b57c8d-98e9-402c-918c-59a2b95444a6",
+  "stage": "RequestReceived",
+  "requestURI": "/api/v1/namespaces/default/services",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "namespace": "default",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:15:00.287107Z",
+  "stageTimestamp": "2025-04-09T10:15:00.287107Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "36b57c8d-98e9-402c-918c-59a2b95444a6",
+  "stage": "ResponseComplete",
+  "requestURI": "/api/v1/namespaces/default/services",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "namespace": "default",
+    "name": "mail-service",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 201
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:15:00.287107Z",
+  "stageTimestamp": "2025-04-09T10:15:00.335128Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "23314d00-4e24-4929-af85-2b70d6567843",
+  "stage": "RequestReceived",
+  "requestURI": "/apis/apps/v1/deployments?allowWatchBookmarks=true&resourceVersion=184940&timeoutSeconds=429&watch=true",
+  "verb": "watch",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:16:22.006271Z",
+  "stageTimestamp": "2025-04-09T10:16:22.006271Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "23314d00-4e24-4929-af85-2b70d6567843",
+  "stage": "ResponseStarted",
+  "requestURI": "/apis/apps/v1/deployments?allowWatchBookmarks=true&resourceVersion=184940&timeoutSeconds=429&watch=true",
+  "verb": "watch",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 200
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:16:22.006271Z",
+  "stageTimestamp": "2025-04-09T10:16:22.007322Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "bc9681ae-700e-46d4-8e5b-98bf941a06f4",
+  "stage": "RequestReceived",
+  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "namespace": "default",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:18:00.500121Z",
+  "stageTimestamp": "2025-04-09T10:18:00.500121Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "bc9681ae-700e-46d4-8e5b-98bf941a06f4",
+  "stage": "ResponseComplete",
+  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "namespace": "default",
+    "name": "securedropzone",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 201
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:18:00.500121Z",
+  "stageTimestamp": "2025-04-09T10:18:00.509400Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "21aceb9b-983b-46d3-8612-84d664479837",
+  "stage": "RequestReceived",
+  "requestURI": "/api/v1/namespaces/default/services",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "namespace": "default",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:18:00.511033Z",
+  "stageTimestamp": "2025-04-09T10:18:00.511033Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "21aceb9b-983b-46d3-8612-84d664479837",
+  "stage": "ResponseComplete",
+  "requestURI": "/api/v1/namespaces/default/services",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "namespace": "default",
+    "name": "web-service",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 201
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:18:00.511033Z",
+  "stageTimestamp": "2025-04-09T10:18:00.526812Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "c46bedfc-97e8-492a-badf-9dbd4410fdcc",
+  "stage": "RequestReceived",
+  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "namespace": "default",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:18:00.536492Z",
+  "stageTimestamp": "2025-04-09T10:18:00.536492Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "c46bedfc-97e8-492a-badf-9dbd4410fdcc",
+  "stage": "ResponseComplete",
+  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "namespace": "default",
+    "name": "securedropzone-sms",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 201
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:18:00.536492Z",
+  "stageTimestamp": "2025-04-09T10:18:00.561478Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "7998470d-6937-45b4-a3ac-3406fdb88789",
+  "stage": "RequestReceived",
+  "requestURI": "/api/v1/namespaces/default/services",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "namespace": "default",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:18:00.569425Z",
+  "stageTimestamp": "2025-04-09T10:18:00.569425Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "7998470d-6937-45b4-a3ac-3406fdb88789",
+  "stage": "ResponseComplete",
+  "requestURI": "/api/v1/namespaces/default/services",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "namespace": "default",
+    "name": "sms-service",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 201
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:18:00.569425Z",
+  "stageTimestamp": "2025-04-09T10:18:00.598567Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "43c85320-46aa-40c0-bc70-c31f9490cf66",
+  "stage": "RequestReceived",
+  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "namespace": "default",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:18:00.604853Z",
+  "stageTimestamp": "2025-04-09T10:18:00.604853Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "43c85320-46aa-40c0-bc70-c31f9490cf66",
+  "stage": "ResponseComplete",
+  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "namespace": "default",
+    "name": "securedropzone-storage",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 201
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:18:00.604853Z",
+  "stageTimestamp": "2025-04-09T10:18:00.626423Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "192b54f2-afad-42f8-bd2e-bfb9e642cc1f",
+  "stage": "RequestReceived",
+  "requestURI": "/api/v1/namespaces/default/services",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "namespace": "default",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:18:00.629864Z",
+  "stageTimestamp": "2025-04-09T10:18:00.629864Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "192b54f2-afad-42f8-bd2e-bfb9e642cc1f",
+  "stage": "ResponseComplete",
+  "requestURI": "/api/v1/namespaces/default/services",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "namespace": "default",
+    "name": "storage-service",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 201
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:18:00.629864Z",
+  "stageTimestamp": "2025-04-09T10:18:00.675372Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "dc70d9bd-a598-49a0-bf5e-ff9bef1450f9",
+  "stage": "RequestReceived",
+  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "namespace": "default",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:18:00.690077Z",
+  "stageTimestamp": "2025-04-09T10:18:00.690077Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "dc70d9bd-a598-49a0-bf5e-ff9bef1450f9",
+  "stage": "ResponseComplete",
+  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "namespace": "default",
+    "name": "securedropzone-mail",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 201
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:18:00.690077Z",
+  "stageTimestamp": "2025-04-09T10:18:00.703472Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "0febe0eb-7547-41ac-84c8-e40b719e2b45",
+  "stage": "RequestReceived",
+  "requestURI": "/api/v1/namespaces/default/services",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "namespace": "default",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:18:00.707325Z",
+  "stageTimestamp": "2025-04-09T10:18:00.707325Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "0febe0eb-7547-41ac-84c8-e40b719e2b45",
+  "stage": "ResponseComplete",
+  "requestURI": "/api/v1/namespaces/default/services",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "namespace": "default",
+    "name": "mail-service",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 201
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:18:00.707325Z",
+  "stageTimestamp": "2025-04-09T10:18:00.758841Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "b7158dd4-41d9-4a1e-b141-0d81a8fc4f44",
+  "stage": "RequestReceived",
+  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "namespace": "default",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:21:00.236014Z",
+  "stageTimestamp": "2025-04-09T10:21:00.236014Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "b7158dd4-41d9-4a1e-b141-0d81a8fc4f44",
+  "stage": "ResponseComplete",
+  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "namespace": "default",
+    "name": "securedropzone",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 201
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:21:00.236014Z",
+  "stageTimestamp": "2025-04-09T10:21:00.245901Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "2cf13130-2a57-4455-9e69-c9822fde2bb0",
+  "stage": "RequestReceived",
+  "requestURI": "/api/v1/namespaces/default/services",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "namespace": "default",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:21:00.247601Z",
+  "stageTimestamp": "2025-04-09T10:21:00.247601Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "2cf13130-2a57-4455-9e69-c9822fde2bb0",
+  "stage": "ResponseComplete",
+  "requestURI": "/api/v1/namespaces/default/services",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "namespace": "default",
+    "name": "web-service",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 201
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:21:00.247601Z",
+  "stageTimestamp": "2025-04-09T10:21:00.271349Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "a186de29-9f8b-48a5-919f-44ac929cca83",
+  "stage": "RequestReceived",
+  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "namespace": "default",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:21:00.272985Z",
+  "stageTimestamp": "2025-04-09T10:21:00.272985Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "a186de29-9f8b-48a5-919f-44ac929cca83",
+  "stage": "ResponseComplete",
+  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "namespace": "default",
+    "name": "securedropzone-sms",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 201
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:21:00.272985Z",
+  "stageTimestamp": "2025-04-09T10:21:00.292713Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "7d496d9c-abc1-411a-b899-c1ad26d89910",
+  "stage": "RequestReceived",
+  "requestURI": "/api/v1/namespaces/default/services",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "namespace": "default",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:21:00.295715Z",
+  "stageTimestamp": "2025-04-09T10:21:00.295715Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "7d496d9c-abc1-411a-b899-c1ad26d89910",
+  "stage": "ResponseComplete",
+  "requestURI": "/api/v1/namespaces/default/services",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "namespace": "default",
+    "name": "sms-service",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 201
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:21:00.295715Z",
+  "stageTimestamp": "2025-04-09T10:21:00.323252Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "53e6412b-58d5-44ab-89a7-1d46db18fe29",
+  "stage": "RequestReceived",
+  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "namespace": "default",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:21:00.332353Z",
+  "stageTimestamp": "2025-04-09T10:21:00.332353Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "53e6412b-58d5-44ab-89a7-1d46db18fe29",
+  "stage": "ResponseComplete",
+  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "namespace": "default",
+    "name": "securedropzone-storage",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 201
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:21:00.332353Z",
+  "stageTimestamp": "2025-04-09T10:21:00.352920Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "0b61029e-04b8-4204-94f7-294de1a4e402",
+  "stage": "RequestReceived",
+  "requestURI": "/api/v1/namespaces/default/services",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "namespace": "default",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:21:00.355175Z",
+  "stageTimestamp": "2025-04-09T10:21:00.355175Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "0b61029e-04b8-4204-94f7-294de1a4e402",
+  "stage": "ResponseComplete",
+  "requestURI": "/api/v1/namespaces/default/services",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "namespace": "default",
+    "name": "storage-service",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 201
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:21:00.355175Z",
+  "stageTimestamp": "2025-04-09T10:21:00.396614Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "c32cbe1f-3256-4ccb-933b-4c0c506b86d3",
+  "stage": "RequestReceived",
+  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "namespace": "default",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:21:00.412323Z",
+  "stageTimestamp": "2025-04-09T10:21:00.412323Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "c32cbe1f-3256-4ccb-933b-4c0c506b86d3",
+  "stage": "ResponseComplete",
+  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "namespace": "default",
+    "name": "securedropzone-mail",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 201
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:21:00.412323Z",
+  "stageTimestamp": "2025-04-09T10:21:00.443824Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "17ddfc1e-6fd2-4028-8830-9e9920b5b50f",
+  "stage": "RequestReceived",
+  "requestURI": "/api/v1/namespaces/default/services",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "namespace": "default",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:21:00.455293Z",
+  "stageTimestamp": "2025-04-09T10:21:00.455293Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "17ddfc1e-6fd2-4028-8830-9e9920b5b50f",
+  "stage": "ResponseComplete",
+  "requestURI": "/api/v1/namespaces/default/services",
+  "verb": "create",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "namespace": "default",
+    "name": "mail-service",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 201
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:21:00.455293Z",
+  "stageTimestamp": "2025-04-09T10:21:00.508429Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "b5027093-b197-40a8-9de1-0f38345befb8",
+  "stage": "RequestReceived",
+  "requestURI": "/apis/securedropzone.securedropzone.nl/v1/securedropzones?allowWatchBookmarks=true&resourceVersion=185877&timeoutSeconds=534&watch=true",
+  "verb": "watch",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "securedropzones",
+    "apiGroup": "securedropzone.securedropzone.nl",
+    "apiVersion": "v1"
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:22:15.784419Z",
+  "stageTimestamp": "2025-04-09T10:22:15.784419Z"
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "b5027093-b197-40a8-9de1-0f38345befb8",
+  "stage": "ResponseStarted",
+  "requestURI": "/apis/securedropzone.securedropzone.nl/v1/securedropzones?allowWatchBookmarks=true&resourceVersion=185877&timeoutSeconds=534&watch=true",
+  "verb": "watch",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "securedropzones",
+    "apiGroup": "securedropzone.securedropzone.nl",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 200
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:22:15.784419Z",
+  "stageTimestamp": "2025-04-09T10:22:15.785859Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "f3f41711-e439-4881-aec2-afaced948546",
+  "stage": "ResponseComplete",
+  "requestURI": "/api/v1/services?allowWatchBookmarks=true&resourceVersion=184558&timeoutSeconds=540&watch=true",
+  "verb": "watch",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "services",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 200
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:14:25.123411Z",
+  "stageTimestamp": "2025-04-09T10:23:25.125934Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "23314d00-4e24-4929-af85-2b70d6567843",
+  "stage": "ResponseComplete",
+  "requestURI": "/apis/apps/v1/deployments?allowWatchBookmarks=true&resourceVersion=184940&timeoutSeconds=429&watch=true",
+  "verb": "watch",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "deployments",
+    "apiGroup": "apps",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 200
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:16:22.006271Z",
+  "stageTimestamp": "2025-04-09T10:23:31.007800Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
+{
+  "kind": "Event",
+  "apiVersion": "audit.k8s.io/v1",
+  "level": "Metadata",
+  "auditID": "b5027093-b197-40a8-9de1-0f38345befb8",
+  "stage": "ResponseComplete",
+  "requestURI": "/apis/securedropzone.securedropzone.nl/v1/securedropzones?allowWatchBookmarks=true&resourceVersion=185877&timeoutSeconds=534&watch=true",
+  "verb": "watch",
+  "user": {
+    "username": "system:serviceaccount:sdz-operator-system:controller-manager",
+    "uid": "637b76b1-55a5-4533-8e62-82eb273abb3b",
+    "groups": [
+      "system:serviceaccounts",
+      "system:serviceaccounts:sdz-operator-system",
+      "system:authenticated"
+    ],
+    "extra": {
+      "authentication.kubernetes.io/credential-id": [
+        "JTI=97680da6-5da5-4f7d-b17a-d69fda6b546c"
+      ],
+      "authentication.kubernetes.io/node-name": [
+        "ubuntu-s-2vcpu-4gb-ams3-02"
+      ],
+      "authentication.kubernetes.io/node-uid": [
+        "78b61ac4-cfdf-4de1-819b-11b01b2593ae"
+      ],
+      "authentication.kubernetes.io/pod-name": [
+        "controller-manager-5cb799d9b8-pspln"
+      ],
+      "authentication.kubernetes.io/pod-uid": [
+        "eee39639-5105-4407-a380-9cb69f45528e"
+      ]
+    }
+  },
+  "sourceIPs": [
+    "10.110.0.14"
+  ],
+  "userAgent": "manager/v0.0.0 (linux/amd64) kubernetes/$Format",
+  "objectRef": {
+    "resource": "securedropzones",
+    "apiGroup": "securedropzone.securedropzone.nl",
+    "apiVersion": "v1"
+  },
+  "responseStatus": {
+    "metadata": {},
+    "code": 200
+  },
+  "requestReceivedTimestamp": "2025-04-09T10:22:15.784419Z",
+  "stageTimestamp": "2025-04-09T10:31:09.786268Z",
+  "annotations": {
+    "authorization.k8s.io/decision": "allow",
+    "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"manager-rolebinding\" of ClusterRole \"manager-role\" to ServiceAccount \"controller-manager/sdz-operator-system\""
+  }
+}
