@@ -36,7 +36,6 @@ Totaal:
 48 create
 9 watch
 
-Tijd voor aangemaakt:
 
 
 ## Test 2:
@@ -81,4 +80,6 @@ Totaal:
 66 create
 6 patch
 
-Tijd voor aangemaakt:
+Start 10:42
+
+
