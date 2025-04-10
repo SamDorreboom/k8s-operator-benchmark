@@ -80,6 +80,6 @@ Totaal:
 66 create
 6 patch
 
-Start 10:42
+Start 10:42 - 11:12
 
 
