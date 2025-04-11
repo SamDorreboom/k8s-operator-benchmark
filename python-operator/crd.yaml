@@ -35,6 +35,9 @@ spec:
               name:
                 description: De naam van de pod.
                 type: string
+              replicas:
+                description: De naam van de pod.
+                type: int
             type: object
             x-kubernetes-preserve-unknown-fields: true
           status:
