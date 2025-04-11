@@ -15,7 +15,7 @@ def create_fn(spec, namespace, logger, **kwargs):
         deployments.get_deploymail(naam, replicas),
         deployments.get_deployweb(naam, replicas),
         deployments.get_deploysms(naam, replicas),
-        deployments.get_deploystorage(naam), replicas,
+        deployments.get_deploystorage(naam, replicas),
     ]
 
     for depl in deploy_specs:

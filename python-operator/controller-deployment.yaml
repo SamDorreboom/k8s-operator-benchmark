@@ -18,4 +18,4 @@ spec:
       serviceAccountName: python-operator-account
       containers:
       - name: python-controller
-        image: samdorreboom/sdz:python2
+        image: samdorreboom/sdz:python10
