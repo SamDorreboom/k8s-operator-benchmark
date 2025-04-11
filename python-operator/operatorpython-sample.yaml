@@ -7,3 +7,4 @@ metadata:
   namespace: onderzoek
 spec:
   name: test
+  replicas: 1

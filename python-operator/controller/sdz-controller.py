@@ -6,15 +6,16 @@ from service import get_service
 @kopf.on.create('securedropzones', group='operators.samdorreboom.nl', version='v1alpha1')
 def create_fn(spec, namespace, logger, **kwargs):
     naam = spec.get('name')
+    replicas = spec.get('replicas')
     api_apps = kubernetes.client.AppsV1Api()
     api_core = kubernetes.client.CoreV1Api()
 
     # Maak deployments aan
     deploy_specs = [
-        deployments.get_deploymail(naam),
-        deployments.get_deployweb(naam),
-        deployments.get_deploysms(naam),
-        deployments.get_deploystorage(naam),
+        deployments.get_deploymail(naam, replicas),
+        deployments.get_deployweb(naam, replicas),
+        deployments.get_deploysms(naam, replicas),
+        deployments.get_deploystorage(naam), replicas,
     ]
 
     for depl in deploy_specs:
@@ -36,4 +37,40 @@ def create_fn(spec, namespace, logger, **kwargs):
     logger.info(f"Deployments en services aangemaakt in namespace: {namespace}")
 
 
+@kopf.on.update('securedropzones', group='operators.samdorreboom.nl', version='v1alpha1')
+def update_fn(spec, namespace, logger, **kwargs):
+    naam = spec.get('name')
+    new_replicas = spec.get('replicas')
 
+    if not naam or new_replicas is None:
+        logger.warning("Naam of replicas niet opgegeven in spec.")
+        return
+
+    logger.info(f"Nieuwe gewenste replica-aantal: {new_replicas}")
+
+    api_apps = kubernetes.client.AppsV1Api()
+
+    deployments_to_update = [
+        f"mail-deployment-{naam}",
+        f"web-deployment-{naam}",
+        f"sms-deployment-{naam}",
+        f"storage-deployment-{naam}",
+    ]
+
+    for deploy_name in deployments_to_update:
+        try:
+            # Haal huidige deployment op
+            deployment = api_apps.read_namespaced_deployment(name=deploy_name, namespace=namespace)
+            current_replicas = deployment.spec.replicas
+
+            # Vergelijk met gewenste staat uit de CR
+            if current_replicas != new_replicas:
+                logger.info(f"Deployment '{deploy_name}' heeft {current_replicas} replicas, aanpassen naar {new_replicas}...")
+                deployment.spec.replicas = new_replicas
+                api_apps.patch_namespaced_deployment(name=deploy_name, namespace=namespace, body=deployment)
+                logger.info(f"Deployment '{deploy_name}' aangepast.")
+            else:
+                logger.info(f"Deployment '{deploy_name}' had al het juiste aantal replicas ({new_replicas}). Geen wijziging nodig.")
+
+        except kubernetes.client.exceptions.ApiException as e:
+            logger.error(f"Fout bij updaten van deployment '{deploy_name}': {e}")
