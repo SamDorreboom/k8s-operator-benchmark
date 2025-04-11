@@ -39,6 +39,7 @@ jq -r '
     (.requestReceivedTimestamp <= "2025-04-10T08:51:00.000000Z")
   ) | .user.username' /var/log/kubernetes/audit/audit.log | sort | uniq -c | sort -nr
 
+kubectl get deployments,securedropzone -o custom-columns=NAME:.metadata.name,CREATIONTIME:.metadata.creationTimestamp,Update:.status.conditions[0].lastUpdateTime -n onderzoek --sort-by=.status.conditions[0].lastUpdateTime
 
 
 ## Audit inschakelen in Minikube
