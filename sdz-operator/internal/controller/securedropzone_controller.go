@@ -76,13 +76,13 @@ func (r *SecureDropzoneReconciler) Reconcile(ctx context.Context, req ctrl.Reque
 
 	deployments := []appsv1.Deployment{
 		newDeployment(fmt.Sprintf("mail-deployment-%s", name), replicas, fmt.Sprintf("mail-deployment-%s", name),
-			"registry.gitlab.warpnet.nl/securedropzone/securedropzone-e2ee/mail:1.7.0"),
+			"registry.gitlab.warpnet.nl/securedropzone/securedropzone-e2ee/mail:1.7.0", sdz),
 		newDeployment(fmt.Sprintf("web-deployment-%s", name), replicas, fmt.Sprintf("web-deployment-%s", name),
-			"registry.gitlab.warpnet.nl/securedropzone/securedropzone-e2ee/web:1.7.0"),
+			"registry.gitlab.warpnet.nl/securedropzone/securedropzone-e2ee/web:1.7.0", sdz),
 		newDeployment(fmt.Sprintf("sms-deployment-%s", name), replicas, fmt.Sprintf("sms-deployment-%s", name),
-			"registry.gitlab.warpnet.nl/securedropzone/securedropzone-e2ee/sms:1.7.0"),
+			"registry.gitlab.warpnet.nl/securedropzone/securedropzone-e2ee/sms:1.7.0", sdz),
 		newDeployment(fmt.Sprintf("storage-deployment-%s", name), replicas, fmt.Sprintf("storage-deployment-%s", name),
-			"registry.gitlab.warpnet.nl/securedropzone/securedropzone-e2ee/storage:1.7.0"),
+			"registry.gitlab.warpnet.nl/securedropzone/securedropzone-e2ee/storage:1.7.0", sdz),
 	}
 
 	for _, dep := range deployments {
@@ -123,10 +123,10 @@ func (r *SecureDropzoneReconciler) Reconcile(ctx context.Context, req ctrl.Reque
 
 	// Maak een lijst van gewenste services
 	services := []corev1.Service{
-		newService(fmt.Sprintf("mail-deployment-%s", name), fmt.Sprintf("mail-service-%s", name)),
-		newService(fmt.Sprintf("web-deployment-%s", name), fmt.Sprintf("web-service-%s", name)),
-		newService(fmt.Sprintf("sms-deployment-%s", name), fmt.Sprintf("sms-service-%s", name)),
-		newService(fmt.Sprintf("storage-deployment-%s", name), fmt.Sprintf("storage-service-%s", name)),
+		newService(fmt.Sprintf("mail-deployment-%s", name), fmt.Sprintf("mail-service-%s", name), sdz),
+		newService(fmt.Sprintf("web-deployment-%s", name), fmt.Sprintf("web-service-%s", name), sdz),
+		newService(fmt.Sprintf("sms-deployment-%s", name), fmt.Sprintf("sms-service-%s", name), sdz),
+		newService(fmt.Sprintf("storage-deployment-%s", name), fmt.Sprintf("storage-service-%s", name), sdz),
 	}
 
 	// Creëer services indien zij niet bestaan

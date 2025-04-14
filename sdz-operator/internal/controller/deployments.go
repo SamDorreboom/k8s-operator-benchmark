@@ -1,16 +1,18 @@
 package controller
 
 import (
+	securedropzonev1 "gitlab.warpnet.nl/securedropzone/sdz-operator/api/v1"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
 // Helper functie om een Deployment resource op te bouwen
-func newDeployment(name string, replicas int32, label string, image string) appsv1.Deployment {
+func newDeployment(name string, replicas int32, label string, image string, sdz *securedropzonev1.SecureDropzone) appsv1.Deployment {
 	return appsv1.Deployment{
 		ObjectMeta: metav1.ObjectMeta{
-			Name: name,
+			Name:      name,
+			Namespace: sdz.Namespace,
 		},
 		Spec: appsv1.DeploymentSpec{
 			Replicas: &replicas,
