@@ -1,0 +1,11 @@
+apiVersion: securedropzone.securedropzone.nl/v1
+kind: SecureDropzone
+metadata:
+  labels:
+    app.kubernetes.io/name: sdz-operator
+    app.kubernetes.io/managed-by: kustomize
+  name:  test1
+  namespace: onderzoek
+spec:
+  name: test1
+  replicas: 1

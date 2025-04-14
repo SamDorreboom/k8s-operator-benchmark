@@ -1,0 +1,4 @@
+## Append samples of your project ##
+resources:
+- securedropzone_v1_securedropzone.yaml
+# +kubebuilder:scaffold:manifestskustomizesamples
